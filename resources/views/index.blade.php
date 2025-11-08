@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FitApp - Mobile App HTML Template</title>
+    <title>GreenUp - Mobile App HTML Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{ asset('assets/img/favicon.ico') }}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +21,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -46,8 +46,9 @@
         <div class="container-xxl position-relative p-0" id="home">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0">FitApp</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <h1 class="m-0">GreenUp</h1>
+                    <img src="{{ asset('assets/img/GreenUp.png') }}" alt="GreenUp Logo" style="height: 50px;">
+
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -76,11 +77,11 @@
                         </div>
                         <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
                             <div class="owl-carousel screenshot-carousel">
-                                <img class="img-fluid" src="img/screenshot-1.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-2.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-3.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-4.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-5.png" alt="">
+                                <img class="img-fluid" src="{{ asset('assets/img/screenshot-1.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('assets/img/screenshot-2.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('assets/img/screenshot-3.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('assets/img/screenshot-4.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('assets/img/screenshot-5.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -121,7 +122,7 @@
                         <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="{{ asset('assets/img/about.png') }}">
                     </div>
                 </div>
             </div>
@@ -212,11 +213,11 @@
                     </div>
                     <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
                         <div class="owl-carousel screenshot-carousel">
-                            <img class="img-fluid" src="img/screenshot-1.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-2.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-3.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-4.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-5.png" alt="">
+                            <img class="{{ asset('assets/img/screenshot-1.png') }}" alt="">
+                            <img class="{{ asset('assets/img/screenshot-2.png') }}" alt="">
+                            <img class="{{ asset('assets/img/screenshot-3.png') }}" alt="">
+                            <img class="{{ asset('assets/img/screenshot-4.png') }}" alt="">
+                            <img class="{{ asset('assets/img/screenshot-5.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -460,7 +461,7 @@
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item rounded p-4">
                         <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-1.jpg" style="width: 85px; height: 85px;">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{{ asset('assets/img/testimonial-1.jpg') }}" style="width: 85px; height: 85px;">
                             <div class="ms-4">
                                 <h5 class="mb-1">Client Name</h5>
                                 <p class="mb-1">Profession</p>
@@ -657,11 +658,11 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="{{ asset('assets/lib/wow/wow.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ asset('assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
     <!-- Template Javascript -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
