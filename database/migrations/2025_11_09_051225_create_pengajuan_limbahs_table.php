@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('pengajuan_limbahs', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->string('jenis_limbah');
+            $table->decimal('berat', 8, 2);
+            $table->integer('poin_didapat')->default(0);
+            $table->enum('status', ['pending', 'verified', 'rejected'])->default('pending');
             $table->timestamps();
         });
     }
