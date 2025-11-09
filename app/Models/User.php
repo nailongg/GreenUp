@@ -7,11 +7,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-public function pengajuanLimbah()
-{
-    return $this->hasMany(PengajuanLimbah::class);
-}
-
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
@@ -50,4 +45,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+// Relasi ke model PengajuanLimbah
+    public function PengajuanLimbah()
+    {
+        return $this->hasMany(PengajuanLimbah::class);
+    }       
 }
